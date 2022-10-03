@@ -53,6 +53,14 @@ public class Service {
 			}
 		}
 		
+		public void delete() {
+			if (head == null) {
+				System.out.println("Empty");
+				return;
+			} System.out.println("Delete first data :" + head.data);
+			head = head.next;
+		}
+		
 		public void printlist() {
 			Node currNode = head;
 			while (currNode != null) {
