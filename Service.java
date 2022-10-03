@@ -41,6 +41,18 @@ public class Service {
 			}   currNode.next = newNode;
 		}
 		
+		public void insert(int before, int data) {
+			Node currNode = head;
+			Node newNode = new Node(data);
+			
+			while (currNode.data != before) {
+				currNode = currNode.next;
+				currNode.next = currNode.next;
+				currNode.next = newNode;
+				System.out.println("value" + data + "After" + before);
+			}
+		}
+		
 		public void printlist() {
 			Node currNode = head;
 			while (currNode != null) {

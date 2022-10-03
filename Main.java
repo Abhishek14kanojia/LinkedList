@@ -14,12 +14,14 @@ public class Main {
 //		list.push(30);
 //		list.push(56);
 		
-		list.append(70);
-		list.append(30);
 		list.append(56);
+		list.append(70);
 		
 		list.printlist();
 
+		
+		list.insert(56, 30);
+		list.printlist();
 	}
 
 }
