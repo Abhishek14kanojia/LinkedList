@@ -24,6 +24,12 @@ public class Service {
 			} newNode.next = head;
 			  head = newNode;
 		}
+		public void push (int data) {
+			Node node = new Node(data);
+			node.next = head;
+			head = node;
+		}
+		
 		
 		public void printlist() {
 			Node currNode = head;
