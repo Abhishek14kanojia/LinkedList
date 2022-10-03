@@ -93,8 +93,31 @@ public class Service {
 			} System.out.println(data);
 			return null;
 		}
-		
-		
+		 public void deleteNode(int data) {
+		        Node currNode = head;
+		        Node prevNode = head;
+
+		        while (currNode != null) {
+		            if (currNode.data == data) {
+		                prevNode.next = currNode.next;
+		                return;
+		            }
+		            prevNode = currNode;
+		            currNode = currNode.next;
+		        }
+		        System.out.println(" Unable value " + data);
+		    }
+		 public void size() {
+		        Node currNode = head;
+		        int count = 0;
+
+		        while(currNode != null) {
+		            count++;
+		            currNode = currNode.next;
+		        }
+
+		        System.out.println("The size is : "+ count);
+		    }
 		
 		public void printlist() {
 			Node currNode = head;
