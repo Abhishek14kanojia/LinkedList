@@ -13,8 +13,8 @@ public class Main {
 		list.add(70);
 		list.printlist();
 		
-		list.findNode(30);
-		list.findNode(80);
+		list.insert(30, 40); 
+		list.printlist();
 		
 	}
 
