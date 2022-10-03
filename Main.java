@@ -1,5 +1,7 @@
 package org.practice1;
 
+import Linecomparion.point;
+
 public class Main {
 		 Node head;
 
@@ -9,15 +11,11 @@ public class Main {
 		list.add(56);
 		list.add(30);
 		list.add(70);
-
 		list.printlist();
 		
-		list.deleteFirst();
+		list.findNode(30);
+		list.findNode(80);
 		
-		list.printlist();
-		
-		list.deleteLast();
-		list.printlist();
 	}
 
 }

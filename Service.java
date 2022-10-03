@@ -81,6 +81,20 @@ public class Service {
 			System.out.println("last node : " + lastNode.data);
 			secondLast.next = null;
 		}
+		public Node findNode(int data) {
+			Node currNode = head;
+			while (currNode != null) {
+				if (currNode.data == data) {
+					System.out.println(data);
+					return currNode;
+				}
+				currNode = currNode.next;
+				
+			} System.out.println(data);
+			return null;
+		}
+		
+		
 		
 		public void printlist() {
 			Node currNode = head;
