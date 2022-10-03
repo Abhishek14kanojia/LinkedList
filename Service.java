@@ -127,4 +127,28 @@ public class Service {
 			}	
 			System.out.println("Null");
 		}
-}
+		public void sortList() {
+	        Node currentNode = head, nextNode = null;
+	        int temp;
+
+	        if(head == null) {
+	            return;
+	        }
+	        else {
+	            while(currentNode != null) {
+	              nextNode = currentNode.next;
+	                while(nextNode != null) {
+	                   if(currentNode.data > nextNode.data) {
+	                        temp = currentNode.data;
+	                        currentNode.data = nextNode.data;
+	                        nextNode.data = temp;
+	                    }
+
+	                    nextNode = nextNode.next;
+	                }
+	                currentNode = currentNode.next;
+	            }
+	        }
+	    }
+	}
+

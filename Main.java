@@ -10,12 +10,16 @@ public class Main {
 		
 		list.add(56);
 		list.add(30);
+		list.add(40);
 		list.add(70);
+		
 		list.printlist();
 		
 		list.deleteNode(40); 
+		list.printlist();
 		list.size();
-		
+		list.sortList();
+		list.printlist();
 	}
 
 }
