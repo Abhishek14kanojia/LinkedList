@@ -12,7 +12,11 @@ public class Main {
 
 		list.printlist();
 		
-		list.delete();
+		list.deleteFirst();
+		
+		list.printlist();
+		
+		list.deleteLast();
 		list.printlist();
 	}
 
