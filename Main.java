@@ -10,9 +10,13 @@ public class Main {
 //		list.add(30);
 //		list.add(70);
 		
-		list.push(70);
-		list.push(30);
-		list.push(56);
+//		list.push(70);
+//		list.push(30);
+//		list.push(56);
+		
+		list.append(70);
+		list.append(30);
+		list.append(56);
 		
 		list.printlist();
 
